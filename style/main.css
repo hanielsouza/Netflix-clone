@@ -1,0 +1,42 @@
+/* Declaração de variáveis de cores */
+:root {
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+/* Resset CSS - zerando todos os componentes
+para maior compatibilidade com os navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*faz com que tudo q estea dentro de um componente pai tenha como limite o tamanho do componente pai */
+}
+
+body {
+  background: var(--preta); /*usando variável */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row; /*Alinha todos os componentes em linha*/
+  align-items: center; /*Alinha os ítems de forma vertical*/
+  justify-content: space-between; /*Cria um espaço entre os componentes*/
+}
+
+header .logo {
+  margin-left: 5px;
+  color: var(--vermelho);
+  font-family: 'Arial Black', times;
+  font-size: 40px;
+}
+
+header nav a {
+  text-decoration: none; /*Remove o sublinhado dos links*/
+  color: #aaa;
+  margin-right: 10px;
+}
+/*Evento acionado quando o mouse está em cima do elemento*/
+header nav a:hover {
+  color: #fff;
+}
