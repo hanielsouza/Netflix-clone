@@ -12,9 +12,11 @@ para maior compatibilidade com os navegadores */
   box-sizing: border-box; /*faz com que tudo q estea dentro de um componente pai tenha como limite o tamanho do componente pai */
 }
 
+/*Elementos base*/
 body {
   background: var(--preta); /*usando variável */
   font-family: 'Times New Roman', Times, serif;
+  color: white;
 }
 
 header .container {
@@ -39,4 +41,59 @@ header nav a {
 /*Evento acionado quando o mouse está em cima do elemento*/
 header nav a:hover {
   color: #fff;
+}
+
+/*Filme principal*/
+
+.filme-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url('/img/brooklyn99-capa.jpg');
+  height: 400px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao {
+  margin-bottom: 90px;
+  margin-top: 10px;
+}
+
+.titulo {
+  margin-top: 15%;
+  font-size: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  margin-right: 15px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.5s ease all;
+}
+
+.botao:hover {
+  background-color: white;
+  color: black;
+}
+
+.botao i {
+  margin-right: 5px;
+}
+
+.container {
+  margin-left: 20px;
+}
+
+.filme-principal .container {
+  width: 70%;
 }
