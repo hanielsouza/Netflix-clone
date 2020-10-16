@@ -15,7 +15,7 @@ para maior compatibilidade com os navegadores */
 /*Elementos base*/
 body {
   background: var(--preta); /*usando variável */
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Arial', Times, serif;
   color: white;
 }
 
@@ -48,7 +48,7 @@ header nav a:hover {
 .filme-principal {
   font-size: 16px;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
-    url('/img/brooklyn99-capa.jpg');
+    url(../img/brooklyn99-capa.jpg);
   height: 400px;
   background-size: cover;
 
@@ -96,4 +96,33 @@ header nav a:hover {
 
 .filme-principal .container {
   width: 70%;
+}
+
+.box-filme {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carrosel-filmes {
+  margin-top: 5px;
+}
+
+/*mediaqueries*/
+@media screen and (max-width: 700px) {
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .botao {
+    margin-top: 5px;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .descricao {
+    width: 50%;
+  }
 }
